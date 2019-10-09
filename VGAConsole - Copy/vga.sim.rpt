@@ -1,0 +1,993 @@
+Simulator report for vga
+Sun Apr 07 20:54:00 2019
+Quartus II Version 7.1 Build 156 04/30/2007 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 250 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; vga.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 250          ;
+; Total output ports checked                          ; 414          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 414          ;
+; Total output ports with no 1-value coverage         ; 414          ;
+; Total output ports with no 0-value coverage         ; 414          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |vga_block|vga:inst|image_generator:img|y[0]                                              ; |vga_block|vga:inst|image_generator:img|y[0]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[1]                                              ; |vga_block|vga:inst|image_generator:img|y[1]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[2]                                              ; |vga_block|vga:inst|image_generator:img|y[2]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[3]                                              ; |vga_block|vga:inst|image_generator:img|x[3]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[0]                                              ; |vga_block|vga:inst|image_generator:img|x[0]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[1]                                              ; |vga_block|vga:inst|image_generator:img|x[1]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[2]                                              ; |vga_block|vga:inst|image_generator:img|x[2]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[6]                                              ; |vga_block|vga:inst|image_generator:img|x[6]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[4]                                              ; |vga_block|vga:inst|image_generator:img|x[4]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[5]                                              ; |vga_block|vga:inst|image_generator:img|x[5]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[4]                                              ; |vga_block|vga:inst|image_generator:img|y[4]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[5]                                              ; |vga_block|vga:inst|image_generator:img|y[5]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[6]                                              ; |vga_block|vga:inst|image_generator:img|y[6]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[7]                                              ; |vga_block|vga:inst|image_generator:img|y[7]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[8]                                              ; |vga_block|vga:inst|image_generator:img|y[8]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[8]                                              ; |vga_block|vga:inst|image_generator:img|x[8]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[9]                                              ; |vga_block|vga:inst|image_generator:img|y[9]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[7]                                              ; |vga_block|vga:inst|image_generator:img|x[7]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[9]                                              ; |vga_block|vga:inst|image_generator:img|x[9]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[3]                                              ; |vga_block|vga:inst|image_generator:img|y[3]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[2]           ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[3]           ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[4]           ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[5]           ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[6]           ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[7]           ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[8]           ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[9]           ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[10]          ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[11]          ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[12]          ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[13]          ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[14]          ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[15]          ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[16]          ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[17]          ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[18]          ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[19]          ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[20]          ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[21]          ; dataout35        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[2]           ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[3]           ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[4]           ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[5]           ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[6]           ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[7]           ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[8]           ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[9]           ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[10]          ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[11]          ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[12]          ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[13]          ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[14]          ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[15]          ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[16]          ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[17]          ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[18]          ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[19]          ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[20]          ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[21]          ; dataout35        ;
+; |vga_block|vga:inst|image_generator:img|Add4~516                                          ; |vga_block|vga:inst|image_generator:img|Add4~516                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~516                                          ; |vga_block|vga:inst|image_generator:img|Add4~517                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~518                                          ; |vga_block|vga:inst|image_generator:img|Add4~518                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~518                                          ; |vga_block|vga:inst|image_generator:img|Add4~519                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~520                                          ; |vga_block|vga:inst|image_generator:img|Add4~520                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~520                                          ; |vga_block|vga:inst|image_generator:img|Add4~521                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~522                                          ; |vga_block|vga:inst|image_generator:img|Add4~522                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~522                                          ; |vga_block|vga:inst|image_generator:img|Add4~523                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~524                                          ; |vga_block|vga:inst|image_generator:img|Add4~524                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~524                                          ; |vga_block|vga:inst|image_generator:img|Add4~525                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~526                                          ; |vga_block|vga:inst|image_generator:img|Add4~526                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~526                                          ; |vga_block|vga:inst|image_generator:img|Add4~527                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~528                                          ; |vga_block|vga:inst|image_generator:img|Add4~528                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~528                                          ; |vga_block|vga:inst|image_generator:img|Add4~529                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~530                                          ; |vga_block|vga:inst|image_generator:img|Add4~530                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~530                                          ; |vga_block|vga:inst|image_generator:img|Add4~531                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~532                                          ; |vga_block|vga:inst|image_generator:img|Add4~532                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~532                                          ; |vga_block|vga:inst|image_generator:img|Add4~533                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~534                                          ; |vga_block|vga:inst|image_generator:img|Add4~534                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~534                                          ; |vga_block|vga:inst|image_generator:img|Add4~535                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~536                                          ; |vga_block|vga:inst|image_generator:img|Add4~536                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~536                                          ; |vga_block|vga:inst|image_generator:img|Add4~537                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~538                                          ; |vga_block|vga:inst|image_generator:img|Add4~538                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~538                                          ; |vga_block|vga:inst|image_generator:img|Add4~539                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~540                                          ; |vga_block|vga:inst|image_generator:img|Add4~540                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~540                                          ; |vga_block|vga:inst|image_generator:img|Add4~541                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~542                                          ; |vga_block|vga:inst|image_generator:img|Add4~542                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~542                                          ; |vga_block|vga:inst|image_generator:img|Add4~543                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~544                                          ; |vga_block|vga:inst|image_generator:img|Add4~544                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~544                                          ; |vga_block|vga:inst|image_generator:img|Add4~545                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~546                                          ; |vga_block|vga:inst|image_generator:img|Add4~546                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~546                                          ; |vga_block|vga:inst|image_generator:img|Add4~547                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~548                                          ; |vga_block|vga:inst|image_generator:img|Add4~548                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~548                                          ; |vga_block|vga:inst|image_generator:img|Add4~549                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~550                                          ; |vga_block|vga:inst|image_generator:img|Add4~550                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~550                                          ; |vga_block|vga:inst|image_generator:img|Add4~551                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~552                                          ; |vga_block|vga:inst|image_generator:img|Add4~552                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~552                                          ; |vga_block|vga:inst|image_generator:img|Add4~553                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~554                                          ; |vga_block|vga:inst|image_generator:img|Add4~554                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~554                                          ; |vga_block|vga:inst|image_generator:img|Add4~555                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~557                                          ; |vga_block|vga:inst|image_generator:img|Add4~557                                                    ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~120                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~121                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~122                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~123                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~124                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~125                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~126                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~127                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~128                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~129                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~130                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~131                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~132                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~133                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~134                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~135                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~136                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~137                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~138                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~138                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~120                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~121                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~122                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~123                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~124                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~125                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~126                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~127                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~128                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~129                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~130                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~131                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~132                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~133                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~134                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~135                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~136                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~137                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~138                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~138                                              ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[0]~89                                           ; |vga_block|vga:inst|image_generator:img|y[0]~89                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[0]~89                                           ; |vga_block|vga:inst|image_generator:img|y[0]~121                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[1]~90                                           ; |vga_block|vga:inst|image_generator:img|y[1]~90                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[1]~90                                           ; |vga_block|vga:inst|image_generator:img|y[1]~122                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[2]~91                                           ; |vga_block|vga:inst|image_generator:img|y[2]~91                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[2]~91                                           ; |vga_block|vga:inst|image_generator:img|y[2]~123                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[0]~82                                           ; |vga_block|vga:inst|image_generator:img|x[0]~82                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[0]~82                                           ; |vga_block|vga:inst|image_generator:img|x[0]~134                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[1]~83                                           ; |vga_block|vga:inst|image_generator:img|x[1]~83                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[1]~83                                           ; |vga_block|vga:inst|image_generator:img|x[1]~135                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[2]~84                                           ; |vga_block|vga:inst|image_generator:img|x[2]~84                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[2]~84                                           ; |vga_block|vga:inst|image_generator:img|x[2]~136                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[3]~85                                           ; |vga_block|vga:inst|image_generator:img|x[3]~85                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[3]~85                                           ; |vga_block|vga:inst|image_generator:img|x[3]~137                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[4]~86                                           ; |vga_block|vga:inst|image_generator:img|x[4]~86                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[4]~86                                           ; |vga_block|vga:inst|image_generator:img|x[4]~138                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[5]~87                                           ; |vga_block|vga:inst|image_generator:img|x[5]~87                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[5]~87                                           ; |vga_block|vga:inst|image_generator:img|x[5]~139                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[6]~88                                           ; |vga_block|vga:inst|image_generator:img|x[6]~88                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[6]~88                                           ; |vga_block|vga:inst|image_generator:img|x[6]~140                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[3]~87                                           ; |vga_block|vga:inst|image_generator:img|y[3]~87                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[3]~87                                           ; |vga_block|vga:inst|image_generator:img|y[3]~124                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[4]~88                                           ; |vga_block|vga:inst|image_generator:img|y[4]~88                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[4]~88                                           ; |vga_block|vga:inst|image_generator:img|y[4]~125                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[5]~82                                           ; |vga_block|vga:inst|image_generator:img|y[5]~82                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[5]~82                                           ; |vga_block|vga:inst|image_generator:img|y[5]~126                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[6]~83                                           ; |vga_block|vga:inst|image_generator:img|y[6]~83                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[6]~83                                           ; |vga_block|vga:inst|image_generator:img|y[6]~127                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[7]~84                                           ; |vga_block|vga:inst|image_generator:img|y[7]~84                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[7]~84                                           ; |vga_block|vga:inst|image_generator:img|y[7]~128                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[8]~85                                           ; |vga_block|vga:inst|image_generator:img|y[8]~85                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[8]~85                                           ; |vga_block|vga:inst|image_generator:img|y[8]~129                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[7]~89                                           ; |vga_block|vga:inst|image_generator:img|x[7]~89                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[7]~89                                           ; |vga_block|vga:inst|image_generator:img|x[7]~141                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[8]~90                                           ; |vga_block|vga:inst|image_generator:img|x[8]~90                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[8]~90                                           ; |vga_block|vga:inst|image_generator:img|x[8]~142                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[9]~86                                           ; |vga_block|vga:inst|image_generator:img|y[9]~86                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[9]~91                                           ; |vga_block|vga:inst|image_generator:img|x[9]~91                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~0         ; dataout0         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~1         ; dataout1         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~2         ; dataout2         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~3         ; dataout3         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~4         ; dataout4         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~5         ; dataout5         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~6         ; dataout6         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~7         ; dataout7         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~8         ; dataout8         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~9         ; dataout9         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~10        ; dataout10        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~11        ; dataout11        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~12        ; dataout12        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~13        ; dataout13        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1           ; dataout14        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT1  ; dataout15        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT2  ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT3  ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT4  ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT5  ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT6  ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT7  ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT8  ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT9  ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT10 ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT11 ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT12 ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT13 ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT14 ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT15 ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT16 ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT17 ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT18 ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT19 ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT20 ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT21 ; dataout35        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~0         ; dataout0         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~1         ; dataout1         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~2         ; dataout2         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~3         ; dataout3         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~4         ; dataout4         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~5         ; dataout5         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~6         ; dataout6         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~7         ; dataout7         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~8         ; dataout8         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~9         ; dataout9         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~10        ; dataout10        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~11        ; dataout11        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~12        ; dataout12        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~13        ; dataout13        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1           ; dataout14        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT1  ; dataout15        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT2  ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT3  ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT4  ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT5  ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT6  ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT7  ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT8  ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT9  ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT10 ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT11 ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT12 ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT13 ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT14 ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT15 ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT16 ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT17 ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT18 ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT19 ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT20 ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT21 ; dataout35        ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync                                      ; |vga_block|vga:inst|controlGenerator:controls|h_sync                                                ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|v_sync                                      ; |vga_block|vga:inst|controlGenerator:controls|v_sync                                                ; regout           ;
+; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock                                 ; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock                                           ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|v_active                                    ; |vga_block|vga:inst|controlGenerator:controls|v_active                                              ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|h_active                                    ; |vga_block|vga:inst|controlGenerator:controls|h_active                                              ; regout           ;
+; |vga_block|vga:inst|image_generator:img|b[9]~94                                           ; |vga_block|vga:inst|image_generator:img|b[9]~94                                                     ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye                                 ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye                                           ; regout           ;
+; |vga_block|vga:inst|image_generator:img|process0~416                                      ; |vga_block|vga:inst|image_generator:img|process0~416                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~417                                      ; |vga_block|vga:inst|image_generator:img|process0~417                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~418                                      ; |vga_block|vga:inst|image_generator:img|process0~418                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~419                                      ; |vga_block|vga:inst|image_generator:img|process0~419                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~420                                      ; |vga_block|vga:inst|image_generator:img|process0~420                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~421                                      ; |vga_block|vga:inst|image_generator:img|process0~421                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~422                                      ; |vga_block|vga:inst|image_generator:img|process0~422                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~423                                      ; |vga_block|vga:inst|image_generator:img|process0~423                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~424                                      ; |vga_block|vga:inst|image_generator:img|process0~424                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~425                                      ; |vga_block|vga:inst|image_generator:img|process0~425                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~426                                      ; |vga_block|vga:inst|image_generator:img|process0~426                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~124                                          ; |vga_block|vga:inst|image_generator:img|r[9]~124                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~351                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~351                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~352                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~352                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~353                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~353                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~356                                          ; |vga_block|vga:inst|image_generator:img|g[9]~356                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~556                                          ; |vga_block|vga:inst|image_generator:img|Add4~556                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan4~264                                     ; |vga_block|vga:inst|image_generator:img|LessThan4~264                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan4~265                                     ; |vga_block|vga:inst|image_generator:img|LessThan4~265                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan4~266                                     ; |vga_block|vga:inst|image_generator:img|LessThan4~266                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~95                                           ; |vga_block|vga:inst|image_generator:img|b[9]~95                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~354                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~354                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~355                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~355                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~125                                          ; |vga_block|vga:inst|image_generator:img|r[9]~125                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~356                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~356                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~357                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~357                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~96                                           ; |vga_block|vga:inst|image_generator:img|b[9]~96                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~357                                          ; |vga_block|vga:inst|image_generator:img|g[9]~357                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan7~274                                     ; |vga_block|vga:inst|image_generator:img|LessThan7~274                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~358                                          ; |vga_block|vga:inst|image_generator:img|g[9]~358                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~359                                          ; |vga_block|vga:inst|image_generator:img|g[9]~359                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~126                                          ; |vga_block|vga:inst|image_generator:img|r[9]~126                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~360                                          ; |vga_block|vga:inst|image_generator:img|g[9]~360                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~97                                           ; |vga_block|vga:inst|image_generator:img|b[9]~97                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~361                                          ; |vga_block|vga:inst|image_generator:img|g[9]~361                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~98                                           ; |vga_block|vga:inst|image_generator:img|b[9]~98                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan7~275                                     ; |vga_block|vga:inst|image_generator:img|LessThan7~275                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~362                                          ; |vga_block|vga:inst|image_generator:img|g[9]~362                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~363                                          ; |vga_block|vga:inst|image_generator:img|g[9]~363                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~364                                          ; |vga_block|vga:inst|image_generator:img|g[9]~364                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~127                                          ; |vga_block|vga:inst|image_generator:img|r[9]~127                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~128                                          ; |vga_block|vga:inst|image_generator:img|r[9]~128                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~129                                          ; |vga_block|vga:inst|image_generator:img|r[9]~129                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~130                                          ; |vga_block|vga:inst|image_generator:img|r[9]~130                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~131                                          ; |vga_block|vga:inst|image_generator:img|r[9]~131                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~132                                          ; |vga_block|vga:inst|image_generator:img|r[9]~132                                                    ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|x[6]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[6]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[5]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[5]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[4]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[4]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[3]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[3]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[2]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[2]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[1]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[1]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[0]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[0]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~87                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~87                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|x[9]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[9]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[8]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[8]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[7]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[7]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~88                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~88                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~89                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~89                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~90                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~90                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal2~64                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal2~64                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync~142                                  ; |vga_block|vga:inst|controlGenerator:controls|h_sync~142                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal1~49                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal1~49                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal1~50                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal1~50                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync~143                                  ; |vga_block|vga:inst|controlGenerator:controls|h_sync~143                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|y[1]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[1]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[0]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[0]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[4]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[4]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[3]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[3]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[2]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[2]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[6]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[6]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[5]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[5]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[7]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[7]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[8]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[8]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal4~88                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal4~88                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal4~89                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal4~89                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|y[9]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[9]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal4~90                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal4~90                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal5~44                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal5~44                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal6~54                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal6~54                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal7~68                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal7~68                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|v_sync~152                                  ; |vga_block|vga:inst|controlGenerator:controls|v_sync~152                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|v_sync~153                                  ; |vga_block|vga:inst|controlGenerator:controls|v_sync~153                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|v_active~146                                ; |vga_block|vga:inst|controlGenerator:controls|v_active~146                                          ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|h_active~146                                ; |vga_block|vga:inst|controlGenerator:controls|h_active~146                                          ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~273                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~273                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~274                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~274                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~275                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~275                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~276                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~276                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~277                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~277                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~278                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~278                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~279                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~279                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~280                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~280                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye~78                              ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye~78                                        ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Hcount~168                                  ; |vga_block|vga:inst|controlGenerator:controls|Hcount~168                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Hcount~169                                  ; |vga_block|vga:inst|controlGenerator:controls|Hcount~169                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Hcount~170                                  ; |vga_block|vga:inst|controlGenerator:controls|Hcount~170                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~204                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~204                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~205                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~205                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~206                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~206                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~207                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~207                                            ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~170                                          ; |vga_block|vga:inst|image_generator:img|Add2~170                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~171                                          ; |vga_block|vga:inst|image_generator:img|Add2~171                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~172                                          ; |vga_block|vga:inst|image_generator:img|Add2~172                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~173                                          ; |vga_block|vga:inst|image_generator:img|Add2~173                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~246                                          ; |vga_block|vga:inst|image_generator:img|Add3~246                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~247                                          ; |vga_block|vga:inst|image_generator:img|Add3~247                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~248                                          ; |vga_block|vga:inst|image_generator:img|Add3~248                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~249                                          ; |vga_block|vga:inst|image_generator:img|Add3~249                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~250                                          ; |vga_block|vga:inst|image_generator:img|Add3~250                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~251                                          ; |vga_block|vga:inst|image_generator:img|Add3~251                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~252                                          ; |vga_block|vga:inst|image_generator:img|Add3~252                                                    ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal6~55                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal6~55                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal2~65                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal2~65                                             ; combout          ;
+; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~2                               ; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~2                                         ; combout          ;
+; |vga_block|n_blank                                                                        ; |vga_block|n_blank                                                                                  ; padio            ;
+; |vga_block|n_sync                                                                         ; |vga_block|n_sync                                                                                   ; padio            ;
+; |vga_block|h_sync                                                                         ; |vga_block|h_sync                                                                                   ; padio            ;
+; |vga_block|v_sync                                                                         ; |vga_block|v_sync                                                                                   ; padio            ;
+; |vga_block|pixel_clk                                                                      ; |vga_block|pixel_clk                                                                                ; padio            ;
+; |vga_block|led                                                                            ; |vga_block|led                                                                                      ; padio            ;
+; |vga_block|b[9]                                                                           ; |vga_block|b[9]                                                                                     ; padio            ;
+; |vga_block|b[8]                                                                           ; |vga_block|b[8]                                                                                     ; padio            ;
+; |vga_block|b[7]                                                                           ; |vga_block|b[7]                                                                                     ; padio            ;
+; |vga_block|b[6]                                                                           ; |vga_block|b[6]                                                                                     ; padio            ;
+; |vga_block|b[5]                                                                           ; |vga_block|b[5]                                                                                     ; padio            ;
+; |vga_block|b[4]                                                                           ; |vga_block|b[4]                                                                                     ; padio            ;
+; |vga_block|b[3]                                                                           ; |vga_block|b[3]                                                                                     ; padio            ;
+; |vga_block|b[2]                                                                           ; |vga_block|b[2]                                                                                     ; padio            ;
+; |vga_block|b[1]                                                                           ; |vga_block|b[1]                                                                                     ; padio            ;
+; |vga_block|b[0]                                                                           ; |vga_block|b[0]                                                                                     ; padio            ;
+; |vga_block|g[9]                                                                           ; |vga_block|g[9]                                                                                     ; padio            ;
+; |vga_block|g[8]                                                                           ; |vga_block|g[8]                                                                                     ; padio            ;
+; |vga_block|g[7]                                                                           ; |vga_block|g[7]                                                                                     ; padio            ;
+; |vga_block|g[6]                                                                           ; |vga_block|g[6]                                                                                     ; padio            ;
+; |vga_block|g[5]                                                                           ; |vga_block|g[5]                                                                                     ; padio            ;
+; |vga_block|g[4]                                                                           ; |vga_block|g[4]                                                                                     ; padio            ;
+; |vga_block|g[3]                                                                           ; |vga_block|g[3]                                                                                     ; padio            ;
+; |vga_block|g[2]                                                                           ; |vga_block|g[2]                                                                                     ; padio            ;
+; |vga_block|g[1]                                                                           ; |vga_block|g[1]                                                                                     ; padio            ;
+; |vga_block|g[0]                                                                           ; |vga_block|g[0]                                                                                     ; padio            ;
+; |vga_block|r[9]                                                                           ; |vga_block|r[9]                                                                                     ; padio            ;
+; |vga_block|r[8]                                                                           ; |vga_block|r[8]                                                                                     ; padio            ;
+; |vga_block|r[7]                                                                           ; |vga_block|r[7]                                                                                     ; padio            ;
+; |vga_block|r[6]                                                                           ; |vga_block|r[6]                                                                                     ; padio            ;
+; |vga_block|r[5]                                                                           ; |vga_block|r[5]                                                                                     ; padio            ;
+; |vga_block|r[4]                                                                           ; |vga_block|r[4]                                                                                     ; padio            ;
+; |vga_block|r[3]                                                                           ; |vga_block|r[3]                                                                                     ; padio            ;
+; |vga_block|r[2]                                                                           ; |vga_block|r[2]                                                                                     ; padio            ;
+; |vga_block|r[1]                                                                           ; |vga_block|r[1]                                                                                     ; padio            ;
+; |vga_block|r[0]                                                                           ; |vga_block|r[0]                                                                                     ; padio            ;
+; |vga_block|button                                                                         ; |vga_block|button~corein                                                                            ; combout          ;
+; |vga_block|blue_sw                                                                        ; |vga_block|blue_sw~corein                                                                           ; combout          ;
+; |vga_block|green_sw                                                                       ; |vga_block|green_sw~corein                                                                          ; combout          ;
+; |vga_block|red_sw                                                                         ; |vga_block|red_sw~corein                                                                            ; combout          ;
+; |vga_block|clk                                                                            ; |vga_block|clk~corein                                                                               ; combout          ;
+; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~clkctrl                         ; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~clkctrl                                   ; outclk           ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync~clkctrl                              ; |vga_block|vga:inst|controlGenerator:controls|h_sync~clkctrl                                        ; outclk           ;
++-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                 ; Output Port Name                                                                                    ; Output Port Type ;
++-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |vga_block|vga:inst|image_generator:img|y[0]                                              ; |vga_block|vga:inst|image_generator:img|y[0]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[1]                                              ; |vga_block|vga:inst|image_generator:img|y[1]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[2]                                              ; |vga_block|vga:inst|image_generator:img|y[2]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[3]                                              ; |vga_block|vga:inst|image_generator:img|x[3]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[0]                                              ; |vga_block|vga:inst|image_generator:img|x[0]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[1]                                              ; |vga_block|vga:inst|image_generator:img|x[1]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[2]                                              ; |vga_block|vga:inst|image_generator:img|x[2]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[6]                                              ; |vga_block|vga:inst|image_generator:img|x[6]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[4]                                              ; |vga_block|vga:inst|image_generator:img|x[4]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[5]                                              ; |vga_block|vga:inst|image_generator:img|x[5]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[4]                                              ; |vga_block|vga:inst|image_generator:img|y[4]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[5]                                              ; |vga_block|vga:inst|image_generator:img|y[5]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[6]                                              ; |vga_block|vga:inst|image_generator:img|y[6]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[7]                                              ; |vga_block|vga:inst|image_generator:img|y[7]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[8]                                              ; |vga_block|vga:inst|image_generator:img|y[8]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[8]                                              ; |vga_block|vga:inst|image_generator:img|x[8]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[9]                                              ; |vga_block|vga:inst|image_generator:img|y[9]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[7]                                              ; |vga_block|vga:inst|image_generator:img|x[7]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|x[9]                                              ; |vga_block|vga:inst|image_generator:img|x[9]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|y[3]                                              ; |vga_block|vga:inst|image_generator:img|y[3]                                                        ; regout           ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[2]           ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[3]           ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[4]           ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[5]           ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[6]           ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[7]           ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[8]           ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[9]           ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[10]          ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[11]          ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[12]          ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[13]          ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[14]          ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[15]          ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[16]          ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[17]          ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[18]          ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[19]          ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[20]          ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|result[21]          ; dataout35        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[2]           ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[3]           ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[4]           ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[5]           ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[6]           ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[7]           ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[8]           ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[9]           ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[10]          ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[11]          ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[12]          ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[13]          ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[14]          ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[15]          ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[16]          ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[17]          ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[18]          ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[19]          ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[20]          ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_out2  ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|result[21]          ; dataout35        ;
+; |vga_block|vga:inst|image_generator:img|Add4~516                                          ; |vga_block|vga:inst|image_generator:img|Add4~516                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~516                                          ; |vga_block|vga:inst|image_generator:img|Add4~517                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~518                                          ; |vga_block|vga:inst|image_generator:img|Add4~518                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~518                                          ; |vga_block|vga:inst|image_generator:img|Add4~519                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~520                                          ; |vga_block|vga:inst|image_generator:img|Add4~520                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~520                                          ; |vga_block|vga:inst|image_generator:img|Add4~521                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~522                                          ; |vga_block|vga:inst|image_generator:img|Add4~522                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~522                                          ; |vga_block|vga:inst|image_generator:img|Add4~523                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~524                                          ; |vga_block|vga:inst|image_generator:img|Add4~524                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~524                                          ; |vga_block|vga:inst|image_generator:img|Add4~525                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~526                                          ; |vga_block|vga:inst|image_generator:img|Add4~526                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~526                                          ; |vga_block|vga:inst|image_generator:img|Add4~527                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~528                                          ; |vga_block|vga:inst|image_generator:img|Add4~528                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~528                                          ; |vga_block|vga:inst|image_generator:img|Add4~529                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~530                                          ; |vga_block|vga:inst|image_generator:img|Add4~530                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~530                                          ; |vga_block|vga:inst|image_generator:img|Add4~531                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~532                                          ; |vga_block|vga:inst|image_generator:img|Add4~532                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~532                                          ; |vga_block|vga:inst|image_generator:img|Add4~533                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~534                                          ; |vga_block|vga:inst|image_generator:img|Add4~534                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~534                                          ; |vga_block|vga:inst|image_generator:img|Add4~535                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~536                                          ; |vga_block|vga:inst|image_generator:img|Add4~536                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~536                                          ; |vga_block|vga:inst|image_generator:img|Add4~537                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~538                                          ; |vga_block|vga:inst|image_generator:img|Add4~538                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~538                                          ; |vga_block|vga:inst|image_generator:img|Add4~539                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~540                                          ; |vga_block|vga:inst|image_generator:img|Add4~540                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~540                                          ; |vga_block|vga:inst|image_generator:img|Add4~541                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~542                                          ; |vga_block|vga:inst|image_generator:img|Add4~542                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~542                                          ; |vga_block|vga:inst|image_generator:img|Add4~543                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~544                                          ; |vga_block|vga:inst|image_generator:img|Add4~544                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~544                                          ; |vga_block|vga:inst|image_generator:img|Add4~545                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~546                                          ; |vga_block|vga:inst|image_generator:img|Add4~546                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~546                                          ; |vga_block|vga:inst|image_generator:img|Add4~547                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~548                                          ; |vga_block|vga:inst|image_generator:img|Add4~548                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~548                                          ; |vga_block|vga:inst|image_generator:img|Add4~549                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~550                                          ; |vga_block|vga:inst|image_generator:img|Add4~550                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~550                                          ; |vga_block|vga:inst|image_generator:img|Add4~551                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~552                                          ; |vga_block|vga:inst|image_generator:img|Add4~552                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~552                                          ; |vga_block|vga:inst|image_generator:img|Add4~553                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~554                                          ; |vga_block|vga:inst|image_generator:img|Add4~554                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~554                                          ; |vga_block|vga:inst|image_generator:img|Add4~555                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|Add4~557                                          ; |vga_block|vga:inst|image_generator:img|Add4~557                                                    ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~120                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~121                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~122                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~123                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~124                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~125                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~126                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~127                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~128                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~129                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~130                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~131                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~132                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~133                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~134                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~135                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~136                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~137                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add0~138                                    ; |vga_block|vga:inst|controlGenerator:controls|Add0~138                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~120                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~120                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~121                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~122                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~122                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~123                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~124                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~124                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~125                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~126                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~126                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~127                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~128                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~128                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~129                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~130                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~130                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~131                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~132                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~132                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~133                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~134                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~134                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~135                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~136                                              ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~136                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~137                                              ; cout             ;
+; |vga_block|vga:inst|controlGenerator:controls|Add1~138                                    ; |vga_block|vga:inst|controlGenerator:controls|Add1~138                                              ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[0]~89                                           ; |vga_block|vga:inst|image_generator:img|y[0]~89                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[0]~89                                           ; |vga_block|vga:inst|image_generator:img|y[0]~121                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[1]~90                                           ; |vga_block|vga:inst|image_generator:img|y[1]~90                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[1]~90                                           ; |vga_block|vga:inst|image_generator:img|y[1]~122                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[2]~91                                           ; |vga_block|vga:inst|image_generator:img|y[2]~91                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[2]~91                                           ; |vga_block|vga:inst|image_generator:img|y[2]~123                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[0]~82                                           ; |vga_block|vga:inst|image_generator:img|x[0]~82                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[0]~82                                           ; |vga_block|vga:inst|image_generator:img|x[0]~134                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[1]~83                                           ; |vga_block|vga:inst|image_generator:img|x[1]~83                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[1]~83                                           ; |vga_block|vga:inst|image_generator:img|x[1]~135                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[2]~84                                           ; |vga_block|vga:inst|image_generator:img|x[2]~84                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[2]~84                                           ; |vga_block|vga:inst|image_generator:img|x[2]~136                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[3]~85                                           ; |vga_block|vga:inst|image_generator:img|x[3]~85                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[3]~85                                           ; |vga_block|vga:inst|image_generator:img|x[3]~137                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[4]~86                                           ; |vga_block|vga:inst|image_generator:img|x[4]~86                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[4]~86                                           ; |vga_block|vga:inst|image_generator:img|x[4]~138                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[5]~87                                           ; |vga_block|vga:inst|image_generator:img|x[5]~87                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[5]~87                                           ; |vga_block|vga:inst|image_generator:img|x[5]~139                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[6]~88                                           ; |vga_block|vga:inst|image_generator:img|x[6]~88                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[6]~88                                           ; |vga_block|vga:inst|image_generator:img|x[6]~140                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[3]~87                                           ; |vga_block|vga:inst|image_generator:img|y[3]~87                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[3]~87                                           ; |vga_block|vga:inst|image_generator:img|y[3]~124                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[4]~88                                           ; |vga_block|vga:inst|image_generator:img|y[4]~88                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[4]~88                                           ; |vga_block|vga:inst|image_generator:img|y[4]~125                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[5]~82                                           ; |vga_block|vga:inst|image_generator:img|y[5]~82                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[5]~82                                           ; |vga_block|vga:inst|image_generator:img|y[5]~126                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[6]~83                                           ; |vga_block|vga:inst|image_generator:img|y[6]~83                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[6]~83                                           ; |vga_block|vga:inst|image_generator:img|y[6]~127                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[7]~84                                           ; |vga_block|vga:inst|image_generator:img|y[7]~84                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[7]~84                                           ; |vga_block|vga:inst|image_generator:img|y[7]~128                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[8]~85                                           ; |vga_block|vga:inst|image_generator:img|y[8]~85                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|y[8]~85                                           ; |vga_block|vga:inst|image_generator:img|y[8]~129                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[7]~89                                           ; |vga_block|vga:inst|image_generator:img|x[7]~89                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[7]~89                                           ; |vga_block|vga:inst|image_generator:img|x[7]~141                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|x[8]~90                                           ; |vga_block|vga:inst|image_generator:img|x[8]~90                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[8]~90                                           ; |vga_block|vga:inst|image_generator:img|x[8]~142                                                    ; cout             ;
+; |vga_block|vga:inst|image_generator:img|y[9]~86                                           ; |vga_block|vga:inst|image_generator:img|y[9]~86                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|x[9]~91                                           ; |vga_block|vga:inst|image_generator:img|x[9]~91                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~0         ; dataout0         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~1         ; dataout1         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~2         ; dataout2         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~3         ; dataout3         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~4         ; dataout4         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~5         ; dataout5         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~6         ; dataout6         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~7         ; dataout7         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~8         ; dataout8         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~9         ; dataout9         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~10        ; dataout10        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~11        ; dataout11        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~12        ; dataout12        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~13        ; dataout13        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1           ; dataout14        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT1  ; dataout15        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT2  ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT3  ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT4  ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT5  ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT6  ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT7  ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT8  ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT9  ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT10 ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT11 ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT12 ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT13 ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT14 ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT15 ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT16 ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT17 ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT18 ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT19 ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT20 ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult0|mult_rn01:auto_generated|mac_mult1~DATAOUT21 ; dataout35        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~0         ; dataout0         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~1         ; dataout1         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~2         ; dataout2         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~3         ; dataout3         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~4         ; dataout4         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~5         ; dataout5         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~6         ; dataout6         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~7         ; dataout7         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~8         ; dataout8         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~9         ; dataout9         ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~10        ; dataout10        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~11        ; dataout11        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~12        ; dataout12        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~13        ; dataout13        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1           ; dataout14        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT1  ; dataout15        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT2  ; dataout16        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT3  ; dataout17        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT4  ; dataout18        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT5  ; dataout19        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT6  ; dataout20        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT7  ; dataout21        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT8  ; dataout22        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT9  ; dataout23        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT10 ; dataout24        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT11 ; dataout25        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT12 ; dataout26        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT13 ; dataout27        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT14 ; dataout28        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT15 ; dataout29        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT16 ; dataout30        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT17 ; dataout31        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT18 ; dataout32        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT19 ; dataout33        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT20 ; dataout34        ;
+; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1 ; |vga_block|vga:inst|image_generator:img|lpm_mult:Mult1|mult_rn01:auto_generated|mac_mult1~DATAOUT21 ; dataout35        ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync                                      ; |vga_block|vga:inst|controlGenerator:controls|h_sync                                                ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|v_sync                                      ; |vga_block|vga:inst|controlGenerator:controls|v_sync                                                ; regout           ;
+; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock                                 ; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock                                           ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|v_active                                    ; |vga_block|vga:inst|controlGenerator:controls|v_active                                              ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|h_active                                    ; |vga_block|vga:inst|controlGenerator:controls|h_active                                              ; regout           ;
+; |vga_block|vga:inst|image_generator:img|b[9]~94                                           ; |vga_block|vga:inst|image_generator:img|b[9]~94                                                     ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye                                 ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye                                           ; regout           ;
+; |vga_block|vga:inst|image_generator:img|process0~416                                      ; |vga_block|vga:inst|image_generator:img|process0~416                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~417                                      ; |vga_block|vga:inst|image_generator:img|process0~417                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~418                                      ; |vga_block|vga:inst|image_generator:img|process0~418                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~419                                      ; |vga_block|vga:inst|image_generator:img|process0~419                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~420                                      ; |vga_block|vga:inst|image_generator:img|process0~420                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~421                                      ; |vga_block|vga:inst|image_generator:img|process0~421                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~422                                      ; |vga_block|vga:inst|image_generator:img|process0~422                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~423                                      ; |vga_block|vga:inst|image_generator:img|process0~423                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~424                                      ; |vga_block|vga:inst|image_generator:img|process0~424                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~425                                      ; |vga_block|vga:inst|image_generator:img|process0~425                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|process0~426                                      ; |vga_block|vga:inst|image_generator:img|process0~426                                                ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~124                                          ; |vga_block|vga:inst|image_generator:img|r[9]~124                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~351                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~351                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~352                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~352                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~353                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~353                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~356                                          ; |vga_block|vga:inst|image_generator:img|g[9]~356                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add4~556                                          ; |vga_block|vga:inst|image_generator:img|Add4~556                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan4~264                                     ; |vga_block|vga:inst|image_generator:img|LessThan4~264                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan4~265                                     ; |vga_block|vga:inst|image_generator:img|LessThan4~265                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan4~266                                     ; |vga_block|vga:inst|image_generator:img|LessThan4~266                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~95                                           ; |vga_block|vga:inst|image_generator:img|b[9]~95                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~354                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~354                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~355                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~355                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~125                                          ; |vga_block|vga:inst|image_generator:img|r[9]~125                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~356                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~356                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan5~357                                     ; |vga_block|vga:inst|image_generator:img|LessThan5~357                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~96                                           ; |vga_block|vga:inst|image_generator:img|b[9]~96                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~357                                          ; |vga_block|vga:inst|image_generator:img|g[9]~357                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan7~274                                     ; |vga_block|vga:inst|image_generator:img|LessThan7~274                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~358                                          ; |vga_block|vga:inst|image_generator:img|g[9]~358                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~359                                          ; |vga_block|vga:inst|image_generator:img|g[9]~359                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~126                                          ; |vga_block|vga:inst|image_generator:img|r[9]~126                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~360                                          ; |vga_block|vga:inst|image_generator:img|g[9]~360                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~97                                           ; |vga_block|vga:inst|image_generator:img|b[9]~97                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~361                                          ; |vga_block|vga:inst|image_generator:img|g[9]~361                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|b[9]~98                                           ; |vga_block|vga:inst|image_generator:img|b[9]~98                                                     ; combout          ;
+; |vga_block|vga:inst|image_generator:img|LessThan7~275                                     ; |vga_block|vga:inst|image_generator:img|LessThan7~275                                               ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~362                                          ; |vga_block|vga:inst|image_generator:img|g[9]~362                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~363                                          ; |vga_block|vga:inst|image_generator:img|g[9]~363                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|g[9]~364                                          ; |vga_block|vga:inst|image_generator:img|g[9]~364                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~127                                          ; |vga_block|vga:inst|image_generator:img|r[9]~127                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~128                                          ; |vga_block|vga:inst|image_generator:img|r[9]~128                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~129                                          ; |vga_block|vga:inst|image_generator:img|r[9]~129                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~130                                          ; |vga_block|vga:inst|image_generator:img|r[9]~130                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~131                                          ; |vga_block|vga:inst|image_generator:img|r[9]~131                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|r[9]~132                                          ; |vga_block|vga:inst|image_generator:img|r[9]~132                                                    ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|x[6]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[6]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[5]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[5]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[4]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[4]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[3]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[3]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[2]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[2]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[1]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[1]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[0]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[0]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~87                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~87                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|x[9]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[9]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[8]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[8]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|x[7]                                        ; |vga_block|vga:inst|controlGenerator:controls|x[7]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~88                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~88                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~89                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~89                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal0~90                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal0~90                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal2~64                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal2~64                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync~142                                  ; |vga_block|vga:inst|controlGenerator:controls|h_sync~142                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal1~49                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal1~49                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal1~50                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal1~50                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync~143                                  ; |vga_block|vga:inst|controlGenerator:controls|h_sync~143                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|y[1]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[1]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[0]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[0]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[4]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[4]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[3]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[3]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[2]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[2]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[6]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[6]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[5]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[5]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[7]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[7]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|y[8]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[8]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal4~88                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal4~88                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal4~89                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal4~89                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|y[9]                                        ; |vga_block|vga:inst|controlGenerator:controls|y[9]                                                  ; regout           ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal4~90                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal4~90                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal5~44                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal5~44                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal6~54                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal6~54                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal7~68                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal7~68                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|v_sync~152                                  ; |vga_block|vga:inst|controlGenerator:controls|v_sync~152                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|v_sync~153                                  ; |vga_block|vga:inst|controlGenerator:controls|v_sync~153                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|v_active~146                                ; |vga_block|vga:inst|controlGenerator:controls|v_active~146                                          ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|h_active~146                                ; |vga_block|vga:inst|controlGenerator:controls|h_active~146                                          ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~273                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~273                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~274                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~274                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~275                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~275                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~276                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~276                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~277                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~277                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~278                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~278                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~279                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~279                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~280                             ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|process0~280                                       ; combout          ;
+; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye~78                              ; |vga_block|vga:inst|bullseyeDetector:bullseyeDtc|bullseye~78                                        ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Hcount~168                                  ; |vga_block|vga:inst|controlGenerator:controls|Hcount~168                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Hcount~169                                  ; |vga_block|vga:inst|controlGenerator:controls|Hcount~169                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Hcount~170                                  ; |vga_block|vga:inst|controlGenerator:controls|Hcount~170                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~204                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~204                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~205                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~205                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~206                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~206                                            ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Vcount~207                                  ; |vga_block|vga:inst|controlGenerator:controls|Vcount~207                                            ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~170                                          ; |vga_block|vga:inst|image_generator:img|Add2~170                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~171                                          ; |vga_block|vga:inst|image_generator:img|Add2~171                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~172                                          ; |vga_block|vga:inst|image_generator:img|Add2~172                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add2~173                                          ; |vga_block|vga:inst|image_generator:img|Add2~173                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~246                                          ; |vga_block|vga:inst|image_generator:img|Add3~246                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~247                                          ; |vga_block|vga:inst|image_generator:img|Add3~247                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~248                                          ; |vga_block|vga:inst|image_generator:img|Add3~248                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~249                                          ; |vga_block|vga:inst|image_generator:img|Add3~249                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~250                                          ; |vga_block|vga:inst|image_generator:img|Add3~250                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~251                                          ; |vga_block|vga:inst|image_generator:img|Add3~251                                                    ; combout          ;
+; |vga_block|vga:inst|image_generator:img|Add3~252                                          ; |vga_block|vga:inst|image_generator:img|Add3~252                                                    ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal6~55                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal6~55                                             ; combout          ;
+; |vga_block|vga:inst|controlGenerator:controls|Equal2~65                                   ; |vga_block|vga:inst|controlGenerator:controls|Equal2~65                                             ; combout          ;
+; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~2                               ; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~2                                         ; combout          ;
+; |vga_block|n_blank                                                                        ; |vga_block|n_blank                                                                                  ; padio            ;
+; |vga_block|n_sync                                                                         ; |vga_block|n_sync                                                                                   ; padio            ;
+; |vga_block|h_sync                                                                         ; |vga_block|h_sync                                                                                   ; padio            ;
+; |vga_block|v_sync                                                                         ; |vga_block|v_sync                                                                                   ; padio            ;
+; |vga_block|pixel_clk                                                                      ; |vga_block|pixel_clk                                                                                ; padio            ;
+; |vga_block|led                                                                            ; |vga_block|led                                                                                      ; padio            ;
+; |vga_block|b[9]                                                                           ; |vga_block|b[9]                                                                                     ; padio            ;
+; |vga_block|b[8]                                                                           ; |vga_block|b[8]                                                                                     ; padio            ;
+; |vga_block|b[7]                                                                           ; |vga_block|b[7]                                                                                     ; padio            ;
+; |vga_block|b[6]                                                                           ; |vga_block|b[6]                                                                                     ; padio            ;
+; |vga_block|b[5]                                                                           ; |vga_block|b[5]                                                                                     ; padio            ;
+; |vga_block|b[4]                                                                           ; |vga_block|b[4]                                                                                     ; padio            ;
+; |vga_block|b[3]                                                                           ; |vga_block|b[3]                                                                                     ; padio            ;
+; |vga_block|b[2]                                                                           ; |vga_block|b[2]                                                                                     ; padio            ;
+; |vga_block|b[1]                                                                           ; |vga_block|b[1]                                                                                     ; padio            ;
+; |vga_block|b[0]                                                                           ; |vga_block|b[0]                                                                                     ; padio            ;
+; |vga_block|g[9]                                                                           ; |vga_block|g[9]                                                                                     ; padio            ;
+; |vga_block|g[8]                                                                           ; |vga_block|g[8]                                                                                     ; padio            ;
+; |vga_block|g[7]                                                                           ; |vga_block|g[7]                                                                                     ; padio            ;
+; |vga_block|g[6]                                                                           ; |vga_block|g[6]                                                                                     ; padio            ;
+; |vga_block|g[5]                                                                           ; |vga_block|g[5]                                                                                     ; padio            ;
+; |vga_block|g[4]                                                                           ; |vga_block|g[4]                                                                                     ; padio            ;
+; |vga_block|g[3]                                                                           ; |vga_block|g[3]                                                                                     ; padio            ;
+; |vga_block|g[2]                                                                           ; |vga_block|g[2]                                                                                     ; padio            ;
+; |vga_block|g[1]                                                                           ; |vga_block|g[1]                                                                                     ; padio            ;
+; |vga_block|g[0]                                                                           ; |vga_block|g[0]                                                                                     ; padio            ;
+; |vga_block|r[9]                                                                           ; |vga_block|r[9]                                                                                     ; padio            ;
+; |vga_block|r[8]                                                                           ; |vga_block|r[8]                                                                                     ; padio            ;
+; |vga_block|r[7]                                                                           ; |vga_block|r[7]                                                                                     ; padio            ;
+; |vga_block|r[6]                                                                           ; |vga_block|r[6]                                                                                     ; padio            ;
+; |vga_block|r[5]                                                                           ; |vga_block|r[5]                                                                                     ; padio            ;
+; |vga_block|r[4]                                                                           ; |vga_block|r[4]                                                                                     ; padio            ;
+; |vga_block|r[3]                                                                           ; |vga_block|r[3]                                                                                     ; padio            ;
+; |vga_block|r[2]                                                                           ; |vga_block|r[2]                                                                                     ; padio            ;
+; |vga_block|r[1]                                                                           ; |vga_block|r[1]                                                                                     ; padio            ;
+; |vga_block|r[0]                                                                           ; |vga_block|r[0]                                                                                     ; padio            ;
+; |vga_block|button                                                                         ; |vga_block|button~corein                                                                            ; combout          ;
+; |vga_block|blue_sw                                                                        ; |vga_block|blue_sw~corein                                                                           ; combout          ;
+; |vga_block|green_sw                                                                       ; |vga_block|green_sw~corein                                                                          ; combout          ;
+; |vga_block|red_sw                                                                         ; |vga_block|red_sw~corein                                                                            ; combout          ;
+; |vga_block|clk                                                                            ; |vga_block|clk~corein                                                                               ; combout          ;
+; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~clkctrl                         ; |vga_block|vga:inst|clock_divider:clk_divider|pixel_clock~clkctrl                                   ; outclk           ;
+; |vga_block|vga:inst|controlGenerator:controls|h_sync~clkctrl                              ; |vga_block|vga:inst|controlGenerator:controls|h_sync~clkctrl                                        ; outclk           ;
++-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 7.1 Build 156 04/30/2007 SJ Web Edition
+    Info: Processing started: Sun Apr 07 20:53:59 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off vga -c vga
+Info: Using vector source file "C:/Users/Chris/Desktop/quartusvga/vga.vwf"
+Warning: Can't find signal in vector source file for input pin "|vga_block|button"
+Warning: Can't find signal in vector source file for input pin "|vga_block|blue_sw"
+Warning: Can't find signal in vector source file for input pin "|vga_block|green_sw"
+Warning: Can't find signal in vector source file for input pin "|vga_block|red_sw"
+Warning: Can't find signal in vector source file for input pin "|vga_block|clk"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 5 warnings
+    Info: Allocated 172 megabytes of memory during processing
+    Info: Processing ended: Sun Apr 07 20:54:00 2019
+    Info: Elapsed time: 00:00:01
+
+

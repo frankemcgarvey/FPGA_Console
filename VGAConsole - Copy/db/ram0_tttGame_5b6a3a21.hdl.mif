@@ -1,0 +1,20 @@
+-- begin_signature
+-- tttGame
+-- end_signature
+WIDTH=2;
+DEPTH=16;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	8 :	11;
+	7 :	11;
+	6 :	11;
+	5 :	11;
+	4 :	11;
+	3 :	11;
+	2 :	11;
+	1 :	11;
+	0 :	11;
+END;

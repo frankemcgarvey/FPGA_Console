@@ -1,0 +1,50 @@
+--scfifo ADD_RAM_OUTPUT_REGISTER="OFF" DEVICE_FAMILY="Cyclone II" LPM_NUMWORDS=128 LPM_SHOWAHEAD="ON" lpm_width=32 lpm_widthu=7 OPTIMIZE_FOR_SPEED=5 OVERFLOW_CHECKING="OFF" UNDERFLOW_CHECKING="OFF" USE_EAB="ON" clock data empty full q rdreq sclr usedw wrreq CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 CYCLONEII_M4K_COMPATIBILITY="ON" INTENDED_DEVICE_FAMILY="Cyclone II" LOW_POWER_MODE="AUTO"
+--VERSION_BEGIN 7.1 cbx_altdpram 2007:03:30:09:43:02:SJ cbx_altsyncram 2007:03:22:08:29:24:SJ cbx_cycloneii 2007:01:23:09:39:40:SJ cbx_fifo_common 2006:03:14:11:59:42:SJ cbx_lpm_add_sub 2007:01:08:11:15:18:SJ cbx_lpm_compare 2007:02:05:11:33:54:SJ cbx_lpm_counter 2007:03:22:23:17:10:SJ cbx_lpm_decode 2006:11:21:10:27:00:SJ cbx_lpm_mux 2006:11:21:10:27:10:SJ cbx_mgl 2007:04:03:14:06:46:SJ cbx_scfifo 2006:10:14:23:20:56:SJ cbx_stratix 2007:04:12:16:43:52:SJ cbx_stratixii 2007:02:12:17:08:26:SJ cbx_stratixiii 2007:03:13:14:47:12:SJ cbx_util_mgl 2007:01:15:12:22:48:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2007 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION a_dpfifo_on31 (clock, data[31..0], rreq, sclr, wreq)
+RETURNS ( empty, full, q[31..0], usedw[6..0]);
+
+--synthesis_resources = lut 30 M4K 1 reg 35 
+SUBDESIGN scfifo_5041
+( 
+	clock	:	input;
+	data[31..0]	:	input;
+	empty	:	output;
+	full	:	output;
+	q[31..0]	:	output;
+	rdreq	:	input;
+	sclr	:	input;
+	usedw[6..0]	:	output;
+	wrreq	:	input;
+) 
+VARIABLE 
+	dpfifo : a_dpfifo_on31;
+
+BEGIN 
+	dpfifo.clock = clock;
+	dpfifo.data[] = data[];
+	dpfifo.rreq = rdreq;
+	dpfifo.sclr = sclr;
+	dpfifo.wreq = wrreq;
+	empty = dpfifo.empty;
+	full = dpfifo.full;
+	q[] = dpfifo.q[];
+	usedw[] = dpfifo.usedw[];
+END;
+--VALID FILE

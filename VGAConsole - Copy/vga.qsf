@@ -1,0 +1,144 @@
+# Copyright (C) 1991-2007 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		vga_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name TOP_LEVEL_ENTITY vga_block
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 7.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:02:53  APRIL 06, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION 7.1
+set_location_assignment PIN_C8 -to r[0]
+set_location_assignment PIN_F10 -to r[1]
+set_location_assignment PIN_G10 -to r[2]
+set_location_assignment PIN_D9 -to r[3]
+set_location_assignment PIN_C9 -to r[4]
+set_location_assignment PIN_A8 -to r[5]
+set_location_assignment PIN_H11 -to r[6]
+set_location_assignment PIN_H12 -to r[7]
+set_location_assignment PIN_F11 -to r[8]
+set_location_assignment PIN_E10 -to r[9]
+set_location_assignment PIN_B9 -to g[0]
+set_location_assignment PIN_A9 -to g[1]
+set_location_assignment PIN_C10 -to g[2]
+set_location_assignment PIN_D10 -to g[3]
+set_location_assignment PIN_B10 -to g[4]
+set_location_assignment PIN_A10 -to g[5]
+set_location_assignment PIN_G11 -to g[6]
+set_location_assignment PIN_D11 -to g[7]
+set_location_assignment PIN_E12 -to g[8]
+set_location_assignment PIN_D12 -to g[9]
+set_location_assignment PIN_J13 -to b[0]
+set_location_assignment PIN_J14 -to b[1]
+set_location_assignment PIN_F12 -to b[2]
+set_location_assignment PIN_G12 -to b[3]
+set_location_assignment PIN_J10 -to b[4]
+set_location_assignment PIN_J11 -to b[5]
+set_location_assignment PIN_C11 -to b[6]
+set_location_assignment PIN_B11 -to b[7]
+set_location_assignment PIN_C12 -to b[8]
+set_location_assignment PIN_B12 -to b[9]
+set_location_assignment PIN_N2 -to clk
+set_location_assignment PIN_B8 -to pixel_clk
+set_location_assignment PIN_A7 -to h_sync
+set_location_assignment PIN_D6 -to n_blank
+set_location_assignment PIN_B7 -to n_sync
+set_location_assignment PIN_D8 -to v_sync
+set_location_assignment PIN_P25 -to red_sw
+set_location_assignment PIN_N26 -to green_sw
+set_location_assignment PIN_N25 -to blue_sw
+set_location_assignment PIN_V1 -to button
+set_location_assignment PIN_AD12 -to led
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE vga.vwf
+set_location_assignment PIN_N1 -to up
+set_location_assignment PIN_A13 -to down
+set_location_assignment PIN_AE14 -to toggle
+set_location_assignment PIN_L4 -to power
+set_location_assignment PIN_K3 -to enable
+set_location_assignment PIN_K2 -to backlight
+set_location_assignment PIN_J1 -to dOut[0]
+set_location_assignment PIN_J2 -to dOut[1]
+set_location_assignment PIN_H1 -to dOut[2]
+set_location_assignment PIN_H2 -to dOut[3]
+set_location_assignment PIN_J4 -to dOut[4]
+set_location_assignment PIN_J3 -to dOut[5]
+set_location_assignment PIN_H4 -to dOut[6]
+set_location_assignment PIN_H3 -to dOut[7]
+set_location_assignment PIN_K1 -to RS
+set_location_assignment PIN_K4 -to RW
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY no_file_for_top_partition -to | -section_id Top
+set_location_assignment PIN_P1 -to right
+set_location_assignment PIN_P2 -to left
+set_location_assignment PIN_B5 -to AUD_ADCDAT
+set_location_assignment PIN_C5 -to AUD_ADCLRCK
+set_location_assignment PIN_B4 -to AUD_BCLK
+set_location_assignment PIN_A4 -to AUD_DACDAT
+set_location_assignment PIN_C6 -to AUD_DACLRCK
+set_location_assignment PIN_A5 -to AUD_XCK
+set_location_assignment PIN_D13 -to CLOCK_27
+set_location_assignment PIN_A6 -to I2C_SCLK
+set_location_assignment PIN_B6 -to I2C_SDAT
+set_location_assignment PIN_W26 -to KEY[3]
+set_location_assignment PIN_P23 -to KEY[2]
+set_location_assignment PIN_N23 -to KEY[1]
+set_location_assignment PIN_G26 -to KEY[0]
+set_location_assignment PIN_D26 -to ps2clk
+set_location_assignment PIN_C24 -to ps2data
+set_global_assignment -name VECTOR_WAVEFORM_FILE vgatest.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE vga.vwf
+set_global_assignment -name VHDL_FILE pixel_clock.vhd
+set_global_assignment -name VHDL_FILE debounce.vhd
+set_global_assignment -name VHDL_FILE keyboard.vhd
+set_global_assignment -name VHDL_FILE vga.vhd
+set_global_assignment -name VHDL_FILE control_generator.vhd
+set_global_assignment -name BDF_FILE vga_block.bdf
+set_global_assignment -name VHDL_FILE clock_divider.vhd
+set_global_assignment -name VHDL_FILE lcd.vhd
+set_global_assignment -name VHDL_FILE packages/lcd_package.vhd
+set_global_assignment -name VHDL_FILE packages/counter_package.vhd
+set_global_assignment -name VHDL_FILE packages/shape_package.vhd
+set_global_assignment -name VHDL_FILE packages/target_package.vhd
+set_global_assignment -name VHDL_FILE targetGame.vhd
+set_global_assignment -name VHDL_FILE packages/ttt_package.vhd
+set_global_assignment -name VHDL_FILE packages/sevenseg_package.vhd
+set_global_assignment -name VHDL_FILE connect4Game.vhd
+set_global_assignment -name VHDL_FILE packages/connect4_package.vhd
+set_global_assignment -name VHDL_FILE gameController.vhd
+set_global_assignment -name VHDL_FILE RGBController.vhd
+set_global_assignment -name VHDL_FILE buttonController.vhd
+set_global_assignment -name VHDL_FILE mainScreen.vhd
+set_global_assignment -name VERILOG_FILE I2C_Controller.v
+set_global_assignment -name VHDL_FILE tttGame.vhd
+set_global_assignment -name VERILOG_FILE avconf.v
+set_global_assignment -name VERILOG_FILE Audio_Main.v
+set_global_assignment -name VERILOG_FILE Audio_Controller.v
+set_global_assignment -name VERILOG_FILE Audio_Clock.v
+set_global_assignment -name VERILOG_FILE Altera_UP_SYNC_FIFO.v
+set_global_assignment -name VERILOG_FILE Altera_UP_Clock_Edge.v
+set_global_assignment -name VERILOG_FILE Altera_UP_Audio_Out_Serializer.v
+set_global_assignment -name VERILOG_FILE Altera_UP_Audio_In_Deserializer.v
+set_global_assignment -name VERILOG_FILE Altera_UP_Audio_Bit_Counter.v
+set_global_assignment -name VHDL_FILE kbDecoder.vhd
+set_global_assignment -name VHDL_FILE oreight.vhd

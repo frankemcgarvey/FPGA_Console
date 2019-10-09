@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.386 ns
+From           : SW[9]
+To             : Audio_Main:inst3|Audio_Controller:Audio_Controller|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_5041:auto_generated|a_dpfifo_on31:dpfifo|altsyncram_rc81:FIFOram|ram_block1a0~porta_datain_reg28
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 39.553 ns
+From           : vga:inst|connect4Game:game2|r[9]
+To             : r[2]
+From Clock     : clk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.139 ns
+From           : I2C_SDAT
+To             : Audio_Main:inst3|avconf:avc|I2C_Controller:u0|ACK3
+From Clock     : --
+To Clock       : clk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk'
+Slack          : -28.907 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : 12.85 MHz ( period = 77.814 ns )
+From           : vga:inst|connect4Game:game2|yPix[1]
+To             : vga:inst|connect4Game:game2|r[9]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 1363
+
+Type           : Clock Hold: 'clk'
+Slack          : -23.555 ns
+Required Time  : 50.00 MHz ( period = 20.000 ns )
+Actual Time    : N/A
+From           : vga:inst|controlGenerator:controls|v_active
+To             : vga:inst|connect4Game:game2|b[9]
+From Clock     : clk
+To Clock       : clk
+Failed Paths   : 1095
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 2458
+
+--------------------------------------------------------------------------------------
+

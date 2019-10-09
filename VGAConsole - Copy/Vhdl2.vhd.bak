@@ -1,0 +1,33 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.target_package.all;
+use work.properties_package.all;
+
+
+entity targetGame is
+	generic(
+			xMin      : integer := -100;
+			xMax      : integer := 700;
+			Hmid      : integer := 320;
+			Vmid      : integer := 240;
+			Size      : integer := 6;
+			nTargets  : integer := 5);
+	port(
+	 variable x, y    : in  integer range 0 to 800; 
+	 variable counter : in  integer range xMin to xMax;
+	 signal   r, g, b : out std_logic_vector(9 downto 0));
+end targetGame;
+
+architecture behavior of targetGame is
+begin
+		process(x,y)
+		begin
+		for i in nTargets-1 downto 0 loop  --Loop to create circles	
+			drawCircle(x, y, counter, radii(i), color(i), r, g, b);
+		end loop;
+		
+		drawReticule(x, y, Hmid, Vmid, Size, color(0), r, g, b);
+		end process;
+		
+
+end behavior;

@@ -1,0 +1,217 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package lcd_package is
+
+	function num_to_LCD (signal points : integer) return std_logic_vector;
+
+	
+end lcd_package;	
+
+
+package body lcd_package is
+	
+	function num_to_LCD (signal points : integer) return std_logic_vector is
+	
+begin
+
+	case (points) is
+			when 0 =>      return "00110000";
+			when 1 =>      return "00110001";
+			when 2 =>      return "00110010";
+			when 3 =>      return "00110011";
+			when 4 =>      return "00110100";
+			when 5 =>      return "00110101";
+			when 6 =>      return "00110110";
+			when 7 =>      return "00110111";
+			when 8 =>      return "00111000";
+			when 9 =>      return "00111001";
+			when others => return "11111110";
+	end case;
+end num_to_LCD;
+
+end package body;
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+package counter_package is
+-------------------------------------------------------------------------------------
+	procedure pos_edgeCounter (
+							  signal   clk,
+							           sgnl    : in     std_logic;    
+							  signal number  : inout  natural);
+-------------------------------------------------------------------------------------
+	procedure intCounter (
+						 signal   clk    : in  std_logic;
+						 signal number : inout  integer;
+						 signal   output : out integer);
+						 
+-------------------------------------------------------------------------------------
+end package;
+
+package body counter_package is
+---------------------------------------------------------------------------------------------------------------
+		procedure pos_edgeCounter(
+								 signal   clk,
+							              sgnl    : in     std_logic;    
+						    	 signal number  : inout  natural)  is
+begin
+	if(rising_edge(clk)) then
+		if(sgnl = '1') then number <= number + 1;
+		else                number <= 0;
+		end if;
+	end if;
+end procedure;
+--------------------------------------------------------------------------------------
+	procedure intCounter (
+						 signal   clk    : in  std_logic;
+						 signal number : inout  integer;
+						 signal   output : out integer) is
+begin
+	if(rising_edge(clk)) then 
+		if(number = 800) then number <= -800;
+		else                  number <= number + 1;
+		end if;
+		output <= number;
+	end if;
+end procedure;
+end package body;
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+package shape_package is 
+	function radius (x : natural; y : natural; counter : integer;  constnt : natural)
+	return boolean;
+	
+	
+	procedure colours(
+						constant color         : in  std_logic_vector(2 downto 0);
+						signal   r, g, b       : out std_logic_vector(9 downto 0));
+	procedure drawCircle(
+						signal x, y              : in  natural;
+						signal counter           : in  integer;
+						constant constnt           : in  natural;
+						constant color             : in  std_logic_vector(2 downto 0);
+						signal   r, g, b           : out std_logic_vector(9 downto 0));
+
+	procedure drawReticule(
+						  signal x, y              : in  natural;
+						  constant Hmid, Vmid, Size  : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0));	
+					
+	procedure drawBox(
+						signal x, y              : in natural;
+						constant xStart, xEnd,
+								 yStart, yEnd      : in natural;
+						constant color             : std_logic_vector(2 downto 0);
+						signal r, g, b             : out std_logic_vector(9 downto 0));		
+						
+	
+end package;
+---------------------------------
+---------------------------------
+package body shape_package is
+	
+--------------------------------------------------------------------------------------------
+	function radius (x : natural; y : natural; counter : integer; constnt : natural)
+	return boolean is
+begin
+	
+	return ((x-counter)**2 + (y-240)**2 < constnt);
+	
+end function radius;
+---------------------------------------------------------------------------------------------
+	procedure colours(
+						constant color         : in  std_logic_vector(2 downto 0);
+						signal   r, g, b       : out std_logic_vector(9 downto 0)) is
+begin
+	case(color) is
+		when "000" => r <= (others => '0'); g <= (others => '0'); b <= (others => '0');
+	    when "001" => r <= (others => '0'); g <= (others => '0'); b <= (others => '1');
+	    when "010" => r <= (others => '0'); g <= (others => '1'); b <= (others => '0');
+	    when "011" => r <= (others => '0'); g <= (others => '1'); b <= (others => '1');
+	    when "100" => r <= (others => '1'); g <= (others => '0'); b <= (others => '0');
+	    when "101" => r <= (others => '1'); g <= (others => '0'); b <= (others => '1');
+	    when "110" => r <= (others => '1'); g <= (others => '1'); b <= (others => '0');
+	    when "111" => r <= (others => '1'); g <= (others => '1'); b <= (others => '1');		
+	end case;
+
+end procedure colours;
+---------------------------------------------------------------------------------------------
+	procedure drawCircle(
+						signal x, y               : in  natural;
+						signal counter            : in  integer;
+						constant constnt            : in  natural;
+						constant color              : in  std_logic_vector(2 downto 0);
+						signal   r, g, b            : out std_logic_vector(9 downto 0)) is
+						
+begin
+	
+	if(radius(x, y, counter, constnt)) then
+		colours(color,r,g,b);
+	end if;
+	
+end procedure;
+--------------------------------------------------------------------------------------------
+	procedure drawBox(
+						signal x, y              : in natural;
+						constant xStart, xEnd,
+								 yStart, yEnd      : in natural;
+						constant color             : std_logic_vector(2 downto 0);
+						signal r, g, b             : out std_logic_vector(9 downto 0)) is
+begin
+
+	if((xStart < x) and (x < xEnd) and (yStart < y) and (y < yEnd)) then colours(color, r, g, b);
+	end if;
+
+end procedure;
+
+	
+end package body;
+----------------------------------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use work.shape_package.all;
+
+package target_package is 
+	procedure drawReticule(
+						  signal   x, y              : in  natural;
+						  constant Hmid, Vmid, Size  : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0));
+
+end package;
+
+package body target_package is
+	procedure drawReticule(
+						  signal x, y              : in  natural;
+						  constant Hmid, Vmid, Size  : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0)) is
+begin
+
+	
+	drawBox(x, y, Hmid - Size, Hmid + Size, 239, 241, color, r, g, b);
+	drawBox(x, y, 319, 321, Vmid - Size, Vmid + Size, color, r, g, b);
+
+end procedure; 
+end package body;
+----------------------------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+--Properties of the circles------------------------------------------------------------------------
+package properties_package is
+	type colorProperty  is array(0 to 7) of std_logic_vector(2 downto 0);
+	type radiusProperty is array(0 to 7) of natural range 0 to 10_000;
+	constant color   : colorProperty  := ("000", "001", "010", "011", "100", "101", "110", "111");
+	constant radii   : radiusProperty := (50, 400, 1000, 2000, 3200, 5300, 6400, 7500);
+end package;
+		

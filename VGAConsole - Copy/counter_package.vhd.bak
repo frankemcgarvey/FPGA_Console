@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package counter_package is
+-------------------------------------------------------------------------------------
+	procedure pos_edgeCounter (
+							  signal   clk,
+							           sgnl    : in     std_logic;    
+							  signal number  : inout  natural);
+-------------------------------------------------------------------------------------
+	procedure intCounter (
+						 signal   clk    : in  std_logic;
+						 signal number : inout  integer;
+						 signal   output : out integer);
+						 
+-------------------------------------------------------------------------------------
+end package;
+
+package body counter_package is
+---------------------------------------------------------------------------------------------------------------
+		procedure pos_edgeCounter(
+								 signal   clk,
+							              sgnl    : in     std_logic;    
+						    	 signal number  : inout  natural)  is
+begin
+	if(rising_edge(clk)) then
+		if(sgnl = '1') then number <= number + 1;
+		else                number <= 0;
+		end if;
+	end if;
+end procedure;
+--------------------------------------------------------------------------------------
+	procedure intCounter (
+						 signal   clk    : in  std_logic;
+						 variable number : inout  integer;
+						 signal   output : out integer) is
+begin
+	if(rising_edge(clk)) then 
+		if(number = 800) then number <= -800;
+		else                  number <= number + 1;
+		end if;
+		output <= number;
+	end if;
+end procedure;
+end package body;
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+

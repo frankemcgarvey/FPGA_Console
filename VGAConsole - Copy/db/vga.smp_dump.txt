@@ -1,0 +1,108 @@
+
+State Machine - |vga_block|Audio_Main:inst3|avconf:avc|mSetup_ST
+Name mSetup_ST.0000 mSetup_ST.0010 mSetup_ST.0001 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0001 1 0 1 
+mSetup_ST.0010 1 1 0 
+
+State Machine - |vga_block|lcdDriver:inst1|prevState
+Name prevState.returnhome prevState.writedata2 prevState.writedata1 prevState.entrymode prevState.displaycontrol prevState.cleardisplay prevState.functionset4 prevState.functionset3 prevState.functionset2 prevState.functionset1 
+prevState.functionset1 0 0 0 0 0 0 0 0 0 0 
+prevState.functionset2 0 0 0 0 0 0 0 0 1 1 
+prevState.functionset3 0 0 0 0 0 0 0 1 0 1 
+prevState.functionset4 0 0 0 0 0 0 1 0 0 1 
+prevState.cleardisplay 0 0 0 0 0 1 0 0 0 1 
+prevState.displaycontrol 0 0 0 0 1 0 0 0 0 1 
+prevState.entrymode 0 0 0 1 0 0 0 0 0 1 
+prevState.writedata1 0 0 1 0 0 0 0 0 0 1 
+prevState.writedata2 0 1 0 0 0 0 0 0 0 1 
+prevState.returnhome 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |vga_block|vga:inst|connect4Game:game2|prev_gameState
+Name prev_gameState.menu2 prev_gameState.menu1 prev_gameState.menu0 prev_gameState.play prev_gameState.start 
+prev_gameState.start 0 0 0 0 0 
+prev_gameState.play 0 0 0 1 1 
+prev_gameState.menu0 0 0 1 0 1 
+prev_gameState.menu1 0 1 0 0 1 
+prev_gameState.menu2 1 0 0 0 1 
+
+State Machine - |vga_block|vga:inst|connect4Game:game2|prev_drawState
+Name prev_drawState.drawp2 prev_drawState.drawp1 prev_drawState.check prev_drawState.idle 
+prev_drawState.idle 0 0 0 0 
+prev_drawState.check 0 0 1 1 
+prev_drawState.drawp1 0 1 0 1 
+prev_drawState.drawp2 1 0 0 1 
+
+State Machine - |vga_block|vga:inst|connect4Game:game2|prev_cursorState
+Name prev_cursorState.column6 prev_cursorState.column5 prev_cursorState.column4 prev_cursorState.column3 prev_cursorState.column2 prev_cursorState.column1 prev_cursorState.column0 
+prev_cursorState.column0 0 0 0 0 0 0 0 
+prev_cursorState.column1 0 0 0 0 0 1 1 
+prev_cursorState.column2 0 0 0 0 1 0 1 
+prev_cursorState.column3 0 0 0 1 0 0 1 
+prev_cursorState.column4 0 0 1 0 0 0 1 
+prev_cursorState.column5 0 1 0 0 0 0 1 
+prev_cursorState.column6 1 0 0 0 0 0 1 
+
+State Machine - |vga_block|vga:inst|tttGame:game1|prev_gameState
+Name prev_gameState.menu2 prev_gameState.menu1 prev_gameState.menu0 prev_gameState.play prev_gameState.start 
+prev_gameState.start 0 0 0 0 0 
+prev_gameState.play 0 0 0 1 1 
+prev_gameState.menu0 0 0 1 0 1 
+prev_gameState.menu1 0 1 0 0 1 
+prev_gameState.menu2 1 0 0 0 1 
+
+State Machine - |vga_block|vga:inst|tttGame:game1|prev_drawState
+Name prev_drawState.drawo prev_drawState.drawcross prev_drawState.check prev_drawState.idle 
+prev_drawState.idle 0 0 0 0 
+prev_drawState.check 0 0 1 1 
+prev_drawState.drawcross 0 1 0 1 
+prev_drawState.drawo 1 0 0 1 
+
+State Machine - |vga_block|vga:inst|tttGame:game1|prev_xState
+Name prev_xState.xright prev_xState.xleft prev_xState.xmid 
+prev_xState.xmid 0 0 0 
+prev_xState.xleft 0 1 1 
+prev_xState.xright 1 0 1 
+
+State Machine - |vga_block|vga:inst|tttGame:game1|prev_yState
+Name prev_yState.ytop prev_yState.ybot prev_yState.ymid 
+prev_yState.ymid 0 0 0 
+prev_yState.ybot 0 1 1 
+prev_yState.ytop 1 0 1 
+
+State Machine - |vga_block|vga:inst|targetGame:game0|prev_gameState
+Name prev_gameState.menu prev_gameState.play prev_gameState.start 
+prev_gameState.start 0 0 0 
+prev_gameState.play 0 1 1 
+prev_gameState.menu 1 0 1 
+
+State Machine - |vga_block|vga:inst|targetGame:game0|prev_yState
+Name prev_yState.top prev_yState.bot prev_yState.mid 
+prev_yState.mid 0 0 0 
+prev_yState.bot 0 1 1 
+prev_yState.top 1 0 1 
+
+State Machine - |vga_block|vga:inst|targetGame:game0|prev_detState
+Name prev_detState.ytop prev_detState.ymid prev_detState.ybot prev_detState.fire prev_detState.ready prev_detState.reload 
+prev_detState.reload 0 0 0 0 0 0 
+prev_detState.ready 0 0 0 0 1 1 
+prev_detState.fire 0 0 0 1 0 1 
+prev_detState.ybot 0 0 1 0 0 1 
+prev_detState.ymid 0 1 0 0 0 1 
+prev_detState.ytop 1 0 0 0 0 1 
+
+State Machine - |vga_block|vga:inst|mainScreen:menu|prev_cursorState
+Name prev_cursorState.mid prev_cursorState.bot prev_cursorState.top 
+prev_cursorState.top 0 0 0 
+prev_cursorState.bot 0 1 1 
+prev_cursorState.mid 1 0 1 
+
+State Machine - |vga_block|vga:inst|gameController:gmControl|prev_gameState
+Name prev_gameState.connect4refresh prev_gameState.connect4game prev_gameState.tttrefresh prev_gameState.tttgame prev_gameState.targetrefresh prev_gameState.targetgame prev_gameState.menu 
+prev_gameState.menu 0 0 0 0 0 0 0 
+prev_gameState.targetgame 0 0 0 0 0 1 1 
+prev_gameState.targetrefresh 0 0 0 0 1 0 1 
+prev_gameState.tttgame 0 0 0 1 0 0 1 
+prev_gameState.tttrefresh 0 0 1 0 0 0 1 
+prev_gameState.connect4game 0 1 0 0 0 0 1 
+prev_gameState.connect4refresh 1 0 0 0 0 0 1 

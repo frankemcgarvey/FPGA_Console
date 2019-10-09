@@ -1,0 +1,112 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.shape_package.all;
+use work.properties_package.all;
+
+--
+--constant color   : colorProperty  := ("000",  white
+--										"001",  blue
+--										"010",  green
+--										"011",  cyan
+--										"100",  red
+--										"101",  purple
+--										"110",  yellow
+--										"111"); black
+--constant radii   : radiusProperty := (50, 400, 1000, 2000, 3200, 5300, 6400, 7500);
+--
+package target_package is 
+	
+	type colorIndex is array(0 to 5) of integer range 0 to 7;
+	
+	constant customColor1  : colorIndex := (4, 2, 1, 3, 5);
+	constant customColor2  : colorIndex := (4, 7, 2, 3, 5);
+	constant customColor3  : colorIndex := (4, 7, 0, 2, 1);
+	
+
+
+	procedure drawReticule(
+						  variable x, y              : in  natural;
+						  constant Hmid, Vmid, Size  : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0));
+end package;					
+
+package body target_package is
+	procedure drawReticule(
+						  variable x, y              : in  natural;
+						  constant Hmid, Vmid, Size  : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0)) is
+begin
+
+	
+	drawBox(x, y, Hmid - Size, Hmid + Size, 239, 241, color, r, g, b);
+	drawBox(x, y, 319, 321, Vmid - Size, Vmid + Size, color, r, g, b);
+
+end procedure; 
+
+
+
+
+end package body;
+----------------------------------------------------------------------------------------------------
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use work.target_package.all;
+use work.shape_package.all;
+use work.properties_package.all;
+
+
+package targetGame_package is
+
+	constant xMin      : integer := -100;
+	constant xMax      : integer := 700;
+	constant Hmid      : integer := 320;
+    constant Vmid      : integer := 240;
+	constant Size      : integer := 6;
+    constant nTargets  : integer := 5;
+
+	procedure targetGame(
+						variable x, y     : in  integer range 0 to 800; 
+						variable counter1 : in  integer range xMin to xMax;
+						variable counter2 : in  integer range xMin to xMax;
+						variable counter3 : in  integer range xMin to xMax;
+						signal   r, g, b : out std_logic_vector(9 downto 0));
+	
+end package;
+
+
+
+package body targetGame_package is
+
+	procedure targetGame(
+						variable x, y     : in  integer range 0 to 800; 
+						variable counter1 : in  integer range xMin to xMax;
+						variable counter2 : in  integer range xMin to xMax;
+						variable counter3 : in  integer range xMin to xMax;
+						signal   r, g, b : out std_logic_vector(9 downto 0)) is
+
+begin
+		 
+		 
+
+	for i in 0 downto nTargets-1 loop  --Loop to create circles	
+		drawCircle(x, y, counter1, radii1(i), customColor1(i), r, g, b);
+	end loop;
+	
+	for i in 0 downto nTargets-1 loop  --Loop to create circles	
+		drawCircle(x, y, counter2, radii2(i), customColor2(i), r, g, b);
+	end loop;
+	
+	for i in 0 downto nTargets-1 loop  --Loop to create circles	
+		drawCircle(x, y, counter3, radii3(i), customColor3(i), r, g, b);
+	end loop;
+	
+	
+	drawReticule(x, y, Hmid, Vmid, Size, color(0), r, g, b);
+		 
+end procedure;	
+
+end package body;

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri May 10 11:17:10 2019
+Quartus II Version : 7.1 Build 156 04/30/2007 SJ Web Edition
+Revision Name : vga
+Top-level Entity Name : vga_block
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 15,573 / 33,216 ( 47 % )
+    Total combinational functions : 15,535 / 33,216 ( 47 % )
+    Dedicated logic registers : 1,599 / 33,216 ( 5 % )
+Total registers : 1599
+Total pins : 84 / 475 ( 18 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 483,840 ( 3 % )
+Embedded Multiplier 9-bit elements : 70 / 70 ( 100 % )
+Total PLLs : 1 / 4 ( 25 % )

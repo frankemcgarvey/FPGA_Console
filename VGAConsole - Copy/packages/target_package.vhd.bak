@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.shape_package.all;
+use work.properties_package.all;
+
+--
+--constant color   : colorProperty  := ("000",  white
+--										"001",  blue
+--										"010",  green
+--										"011",  cyan
+--										"100",  red
+--										"101",  purple
+--										"110",  yellow
+--										"111"); black
+--constant radii   : radiusProperty := (50, 400, 1000, 2000, 3200, 5300, 6400, 7500);
+--
+package target_package is 
+	
+	type colorIndex is array(0 to 4) of std_logic_vector(2 downto 0);
+	
+	constant customColor1  : colorIndex := ("100", "010", "001", "101", "011");
+	constant customColor2  : colorIndex := ("100", "111", "010", "011", "110");
+	constant customColor3  : colorIndex := ("100", "110", "000", "010", "001");
+	
+
+	
+	procedure drawReticule(
+						  variable x, y              : in  natural;
+						  constant   Hmid            : in  natural range 0 to 640;
+						  constant   Vmid            : in  natural range 0 to 480;
+						  constant thicc             : in  natural;
+						  constant Size              : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0));
+end package;					
+
+package body target_package is
+	procedure drawReticule(
+						  variable x, y              : in  natural;
+						  constant Hmid              : in  natural range 0 to 640;
+						  constant Vmid              : in  natural range 0 to 480;
+						  constant thicc             : in  natural;
+						  constant Size              : in  natural;
+						  constant color             : in  std_logic_vector(2 downto 0);
+					      signal   r, g, b           : out std_logic_vector(9 downto 0)) is
+begin
+
+	
+	drawBox(x, y, Hmid - Size, Hmid + Size, Vmid-thicc, Vmid+thicc, color, r, g, b); 
+	drawBox(x, y, Hmid-thicc, Hmid+thicc, Vmid - Size, Vmid + Size, color, r, g, b);
+
+end procedure; 
+end package body;
+-------------------------------------------------------------------------------------------------
